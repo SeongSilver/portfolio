@@ -34,7 +34,7 @@ export default function ProjectItem({ data }) {
                     }
                 </div>
 
-                {link ? (<div className="mt-3"><a href={link}>배포링크</a></div>) : null}
+                {/* {link ? (<div className="mt-3"><a href={link}>배포링크</a></div>) : null} */}
 
                 <div className='mt-3'>
                     <a href={githubLink} className="mb-2">깃허브 바로가기</a>
