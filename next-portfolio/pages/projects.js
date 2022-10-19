@@ -9,7 +9,7 @@ export default function Projects({ projects }) {
 
     return (
         <Layout className="px-100">
-            <div className="flex flex-col items-center justify-center min-h-screen mb-10 px-64">
+            <div className="flex flex-col items-center justify-center min-h-screen mb-10 px-32">
                 <Head>
                     <title>윈스턴's 포트폴리오</title>
                     <meta name="description" content="오늘도 리액트" />
