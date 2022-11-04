@@ -1,24 +1,41 @@
-import Animation from './animation';
-import Link from 'next/link';
+import Animation from "./animation";
+import Link from "next/link";
 
 export default function Hero() {
-    return (
-        <>
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">성실버의 개발일기</h1>
-                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">오늘도 커밋하자!</h1>
-                <p className="mb-8 leading-relaxed">청춘을 황금시대의 가지에 가치를 싶이 아름답고 것이다. 설산에서 피가 풍부하게 없으면 하는 위하여, 이것이다. 이상의 광야에서 되는 우는 대중을 많이 것이다. 그들은 하는 같은 과실이 든 이것이다. 웅대한 얼마나 그들의 봄바람을 따뜻한 광야에서 봄바람이다. 뜨고, 위하여, 아니한 관현악이며, 밥을 주며, 있음으로써 이것이다. 대중을 이상의 곳이 자신과 고동을 반짝이는 과실이 위하여서. 그것을 인간이 풍부하게 영원히 보라. 대고, 이것이야말로 구하지 따뜻한 철환하였는가?</p>
-                <div className="flex justify-center">
-                    <Link href="/projects">
-                        <a className="btn-project">
-                            프로젝트 보러가기
-                        </a>
-                    </Link>
-                </div>
-            </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <Animation />
-            </div>
-        </>
-    );
+  return (
+    <>
+      <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mt-16 mb-16 md:mb-0 items-center text-center">
+        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+          소통을 좋아하는 개발자 유성은입니다
+        </h1>
+        <p className="mt-8 mb-16 leading-relaxed font-medium font-MICEGothic">
+          ‘개발자와 소통하는 법, 개발자의 언어로 미팅하기’는 근래 다양한
+          조직에서 주목하고 필요로 하는 주제입니다.
+          <br />
+          <br />
+          저는 아직 숙련된 코딩 실력이나 실무 경험이 많은 개발자는 아닙니다.
+          그러나 커뮤니케이션에 뾰족한 강점이 있는 주니어 개발자라고 자신합니다.
+          <br />
+          <br />
+          하기에 작성한 내용을 통해 학부 시절 학생회장, 대학생 공간디자인 연합회
+          학교대표로 1년 프로젝트를 리드했던 경험, 개발자 양성 부트캠프에서
+          팀장으로 원활한 커뮤니케이션을 기반으로 만들어낸 과정과 결과를
+          보여드리고자 합니다.
+          <br />
+          <br />
+          근래에는 리액트, 타입스크립트 등의 학습을 통해 개발자가 가져야하는
+          본질적인 실력도 함께 키워가고 있는 만큼, 점차 약점을 줄이고 강점을
+          키워나가는 어엿한 개발자로 거듭날 것을 약속드립니다.
+        </p>
+        <div className="flex justify-center">
+          <Link href="/projects">
+            <a className="btn-project font-bold">프로젝트 보러가기</a>
+          </Link>
+        </div>
+      </div>
+      <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <Animation />
+      </div>
+    </>
+  );
 }

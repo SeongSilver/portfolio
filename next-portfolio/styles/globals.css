@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "MICEGothic Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
 .bg-primary {
   @apply bg-white dark:bg-slate-800;
 }
 
 .btn-project {
-  @apply inline-flex text-white dark:text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg;
+  @apply inline-flex text-white dark:text-white bg-teal-500 dark:bg-teal-700 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 dark:hover:bg-teal-900 rounded text-lg;
 }
 
 .project-card {
