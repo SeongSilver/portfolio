@@ -4,12 +4,12 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div>
-      <div className="flex h-screen">
+      <div className="flex h-[81vh] bg-red-200">
         <div className="lg:flex-grow lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mt-16 mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+          <h1 className="pl-16 title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
             소통을 좋아하는 개발자 유성은입니다
           </h1>
-          <p className="mt-8 mb-16 leading-relaxed font-medium font-MICEGothic">
+          <p className="pl-16 mt-8 mb-16 leading-relaxed font-medium font-MICEGothic">
             ‘개발자와 소통하는 법, 개발자의 언어로 미팅하기’는 근래 다양한
             조직에서 주목하고 필요로 하는 주제입니다.
             <br />
@@ -29,9 +29,9 @@ export default function Hero() {
             본질적인 실력도 함께 키워가고 있는 만큼, 점차 약점을 줄이고 강점을
             키워나가는 어엿한 개발자로 거듭날 것을 약속드립니다.
           </p>
-          <div className="flex justify-center">
+          <div className="pl-16 flex justify-center">
             <Link href="/projects">
-              <a className="btn-project font-bold">프로젝트 보러가기</a>
+              <a className=" btn-project font-bold">프로젝트 보러가기</a>
             </Link>
           </div>
         </div>
@@ -39,10 +39,25 @@ export default function Hero() {
           <Animation />
         </div>
       </div>
-      <div className="h-screen">
-        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-lg text-gray-900">
-          Skills
-        </h1>
+      <div className="h-[82vh] bg-blue-300">
+        <div className="p-16 text-center">
+          <div>
+            <h1 className="text-4xl mb-4 font-lg text-gray-900">Skills</h1>
+          </div>
+          <div className="flex">
+            <div className="grow skill-card">
+              <div>하나</div>
+              <div>둘</div>
+              <div>셋</div>
+              <div>넷</div>
+              <div>다섯</div>
+              <div>여섯</div>
+            </div>
+            <div className="grow skill-card">etc</div>
+            <div className="grow skill-card">etc2</div>
+            <div></div>
+          </div>
+        </div>
       </div>
     </div>
   );

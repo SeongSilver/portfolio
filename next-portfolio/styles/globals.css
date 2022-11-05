@@ -47,3 +47,7 @@ a {
 p {
   @apply text-slate-600 dark:text-slate-400;
 }
+
+.skill-card {
+  @apply min-w-min h-[60vh] bg-gray-600 rounded-2xl m-16 p-8;
+}
