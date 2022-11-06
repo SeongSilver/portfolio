@@ -49,5 +49,21 @@ p {
 }
 
 .skill-card {
-  @apply min-w-min h-[60vh] bg-gray-600 rounded-2xl m-16 p-8;
+  @apply h-[60vh] bg-gray-600 rounded-2xl m-16 p-8;
+}
+
+body {
+  @apply overflow-y-hidden;
+}
+
+.outer::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.outer {
+  @apply overflow-y-hidden;
+}
+
+.divider {
+  @apply w-full h-[5px];
 }
