@@ -19,20 +19,20 @@ export default function Header() {
                 viewBox="0 0 24 24">
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
-              <span className="ml-3 text-2xl font-bold ">
+              <span className="ml-3 text-2xl font-bold dark:text-slate-50 ">
                 성실버의 개발노트
               </span>
             </a>
           </Link>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center font-semibold text-lg">
             <Link href="/">
-              <a className="mr-20 hover:text-gray-900">홈</a>
+              <a className="headerTag mr-20 hover:text-gray-900">홈</a>
             </Link>
             <Link href="/projects">
-              <a className="mr-20 hover:text-gray-900">프로젝트</a>
+              <a className="headerTag mr-20 hover:text-gray-900">프로젝트</a>
             </Link>
             <Link href="https://open.kakao.com/o/sNL9y8He">
-              <a className="mr-20 hover:text-gray-900">연락하기</a>
+              <a className="headerTag mr-20 hover:text-gray-900">연락하기</a>
             </Link>
           </nav>
           {/**다크모드 토글 버튼 작업 */}

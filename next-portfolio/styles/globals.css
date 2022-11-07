@@ -48,8 +48,12 @@ p {
   @apply text-slate-600 dark:text-slate-400;
 }
 
+.headerTag {
+  @apply hover:border-b-2 hover:border-slate-900 dark:hover:border-slate-100 dark:hover:transition-transform;
+}
+
 .skill-card {
-  @apply h-[60vh] bg-gray-600 rounded-2xl m-16 p-8;
+  @apply h-[40vh] bg-gray-400 rounded-2xl m-16 p-8;
 }
 
 body {
