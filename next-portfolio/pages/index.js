@@ -17,7 +17,6 @@ export default function Home() {
             <Hero />
           </div>
         </section>
-        <Footer className="m-h-[10vh]" />
       </Layout>
     </>
   );

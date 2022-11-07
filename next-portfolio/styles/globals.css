@@ -57,17 +57,5 @@ p {
 }
 
 body {
-  @apply overflow-y-hidden;
-}
-
-.outer::-webkit-scrollbar {
-  @apply hidden;
-}
-
-.outer {
-  @apply overflow-y-hidden;
-}
-
-.divider {
-  @apply w-full h-[5px];
+  /* @apply overflow-y-hidden; */
 }
