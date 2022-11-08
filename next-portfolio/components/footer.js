@@ -4,12 +4,12 @@ export default function Footer() {
   return (
     <>
       <footer className="text-gray-50 body-font">
-        <div className="bg-gray-700">
+        <div className="py-4 bg-gray-700">
           <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
             <Link href="/">
               <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                <span className="ml-3 text-xl text-slate-50 font-semiblack">
+                <span className="ml-3 text-xl text-slate-50 font-black">
                   성실버의 개발노트
                 </span>
               </a>
@@ -37,7 +37,7 @@ export default function Footer() {
                 </svg>
               </a>
               <Link href="https://www.instagram.com/tjd_silver/">
-                <a className="ml-3 text-gray-500">
+                <a className="ml-8 text-gray-500">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -57,7 +57,7 @@ export default function Footer() {
                   </svg>
                 </a>
               </Link>
-              <a className="ml-3 text-gray-500">
+              <a className="ml-8 text-gray-500">
                 <svg
                   fill="currentColor"
                   stroke="currentColor"

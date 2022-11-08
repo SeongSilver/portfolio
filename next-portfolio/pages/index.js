@@ -12,8 +12,8 @@ export default function Home() {
           <meta name="description" content="오늘도 리액트" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <section className="flex min-h-[70vh]  flex-col items-center justify-centertext-gray-600 body-font">
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <section className="flex flex-col items-center justify-centertext-gray-600 body-font">
+          <div className="container mx-auto flex px-5  md:flex-row flex-col items-center">
             <Hero />
           </div>
         </section>

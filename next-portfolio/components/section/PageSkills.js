@@ -2,7 +2,7 @@ import React from "react";
 
 function PageSkills() {
   return (
-    <div className="text-center ">
+    <div className="text-center my-32">
       <div>
         <h1 className="text-4xl mb-4 font-lg text-gray-900">Skills</h1>
       </div>

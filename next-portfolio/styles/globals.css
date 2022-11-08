@@ -53,9 +53,5 @@ p {
 }
 
 .skill-card {
-  @apply h-[40vh] bg-gray-400 rounded-2xl m-16 p-8;
-}
-
-body {
-  /* @apply overflow-y-hidden; */
+  @apply h-[600px] bg-gray-400 rounded-2xl m-16 p-8;
 }
