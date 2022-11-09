@@ -31,12 +31,12 @@ function PageSkills() {
       <div className="flex">
         <div className="w-3/5 skill-card ">
           <div className="flex flex-col flex-wrap flex-around">
-            <div className="mb-12 flex justify-around">
+            <div className="mb-8 flex justify-around">
               <Image src={html} width={100} height={150} />
               <Image src={css} width={100} height={150} />
               <Image src={js} width={100} height={150} />
             </div>
-            <div className="mb-12 flex justify-around">
+            <div className="mb-8 flex justify-around">
               <Image src={jquery} width={120} height={150} />
               <Image src={bootstrap} width={150} height={150} />
               <Image src={tailwindcss} width={220} height={80} />
@@ -45,10 +45,15 @@ function PageSkills() {
               <Image src={axios} width={200} height={30} />
               <Image src={react} width={200} height={50} />
             </div>
-            <div className="mb-12 flex justify-around">
+            <div className="mb-8 flex justify-around">
               <Image src={redux} width={100} height={150} />
               <Image src={reduxsaga} width={150} height={150} />
               <Image src={nextjs} width={150} height={150} />
+            </div>
+            <div className="flex justify-center">
+              <div className="opacity-70 text-center rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex items-center">
+                &emsp;&nbsp;Front-End
+              </div>
             </div>
           </div>
         </div>
