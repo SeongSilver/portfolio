@@ -1,5 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import DarkModeToggleButton from "./dark-mode-toggle-button";
+
+import logo from "./section/img/logo1.png";
 
 export default function Header() {
   return (
@@ -8,17 +11,7 @@ export default function Header() {
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link href="/">
             <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-10 h-10 text-white p-2 bg-teal-500 rounded-full"
-                viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
+              <Image src={logo} width={50} height={50} />
               <span className="ml-3 text-2xl font-bold dark:text-slate-50 ">
                 성실버의 개발노트
               </span>

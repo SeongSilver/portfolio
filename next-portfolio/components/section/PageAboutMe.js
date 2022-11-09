@@ -6,6 +6,7 @@ import profileImg from "./img/profile.png";
 import github from "./img/github.png";
 import tistory from "./img/tistory.png";
 import notion from "./img/notion.png";
+import instagram from "./img/instagram.png";
 
 function PageAboutme() {
   return (
@@ -37,6 +38,15 @@ function PageAboutme() {
         <p>Tel&emsp;010 . 4370 . 0743</p>
         <p>E-mail&emsp;yooseongeun@naver.com</p>
         <div className="flex items-center justify-around mt-4">
+          <span>
+            <a
+              href="https://www.instagram.com/tjd_silver/"
+              rel="noopener noreferrer"
+              className="text-gray-600 ml-1"
+              target="_blank">
+              <Image src={instagram} width={40} height={40} />
+            </a>
+          </span>
           <span>
             <a
               href="https://github.com/SeongSilver"
@@ -73,8 +83,10 @@ function PageAboutme() {
             <div className="w-[30px] h-[10px] bg-slate-700 mt-4 mr-4"></div>
             <h1 className="text-3xl font-semibold mb-4">Education</h1>
           </div>
+          <br />
           <p class="leading-relaxed text-lg mb-4">
             [2013.03 - 2020.08] 가천대학교 실내건축학과 졸업
+            <br />
             <br />
             [2021.12 - 2022.06] 멀티캠퍼스 풀스택 개발과정 수료
           </p>
@@ -84,25 +96,18 @@ function PageAboutme() {
             <div className="w-[30px] h-[10px] bg-slate-700 mt-4 mr-4"></div>
             <h1 className="text-3xl font-semibold mb-4">Certificate</h1>
           </div>
+          <br />
           <p class="leading-relaxed text-lg mb-4">
             [2022 / 한국산업인력공단] 정보처리기사(필기 합)
             <br />
+            <br />
             [2021 / 한국생산성본부] GTQI 1급
+            <br />
             <br />
             [2020 / 한국산업인력공단] 컬러리스트기사
             <br />
-            [2019 / 한국생산성본부] GTQ 1급
-          </p>
-        </div>
-        <div className="mb-16">
-          <div className="flex flex-row">
-            <div className="w-[30px] h-[10px] bg-slate-700 mt-4 mr-4"></div>
-            <h1 className="text-3xl font-semibold mb-4">C</h1>
-          </div>
-          <p class="leading-relaxed text-lg mb-4">
-            [2013.03 - 2020.08] 가천대학교 실내건축학과
             <br />
-            [2021.12 - 2022.06] 멀티캠퍼스 풀스택 개발과정 수료
+            [2019 / 한국생산성본부] GTQ 1급
           </p>
         </div>
       </div>

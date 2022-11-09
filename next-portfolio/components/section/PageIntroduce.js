@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function PageIntroduce() {
   return (
-    <div className="h-[700px]  flex py-8 mb-4">
+    <div className="h-[700px] flex mb-4">
       <div className="lg:max-w-lg lg:w-full w-5/6 mb-10 md:mb-0">
         <Animation />
       </div>
