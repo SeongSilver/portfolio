@@ -13,7 +13,7 @@ function PageAboutme() {
     <div className="h-[800px] flex flex-row mt-4">
       <div className="w-1/4 mt-8 mx-24 text-center">
         <Link href="https://open.kakao.com/o/sNL9y8He">
-          <a className="headerTag mr-20 hover:text-gray-900">
+          <a className="headerTag mr-20 hover:text-gray-900" title="연락하기">
             <div>
               <Image
                 className="rounded-full"

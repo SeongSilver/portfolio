@@ -51,7 +51,7 @@ function PageSkills() {
               <Image src={nextjs} width={150} height={150} />
             </div>
             <div className="flex justify-center">
-              <div className="opacity-70 text-center rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex items-center">
+              <div className="text-center rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex items-center">
                 &emsp;&nbsp;Front-End
               </div>
             </div>
@@ -71,6 +71,9 @@ function PageSkills() {
             <div className="mb-8">
               <Image src={mysql} />
             </div>
+            <div className="ml-2 text-center rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex items-center">
+              &emsp;&nbsp;&nbsp;Back-End
+            </div>
           </div>
         </div>
         <div className="w-1/5 skill-card items-center">
@@ -84,9 +87,11 @@ function PageSkills() {
             <div className="my-16">
               <Image src={sourcetree} />
             </div>
+            <div className="ml-2 mt-8 text-center rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex items-center">
+              &emsp;&emsp;&nbsp;&nbsp;&nbsp;ETC
+            </div>
           </div>
         </div>
-        <div></div>
       </div>
     </div>
   );
