@@ -26,10 +26,15 @@ function PageSkills() {
   return (
     <div className="text-center my-32">
       <div>
-        <h1 className="text-4xl mb-4 font-semibold text-gray-900">Skills</h1>
+        <h1 className="text-4xl font-semibold text-gray-900">Skills</h1>
       </div>
       <div className="flex">
-        <div className="w-3/5 skill-card ">
+        <div className="w-3/5 skill-card content-center">
+          <div className="mb-4 flex justify-center">
+            <div className="mb-4 rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex justify-center items-center">
+              Front-End
+            </div>
+          </div>
           <div className="flex flex-col   items-center">
             <div className="mb-12 flex space-x-12">
               <div>
@@ -72,12 +77,14 @@ function PageSkills() {
                 <Image src={nextjs} width={200} height={150} />
               </div>
             </div>
-            <div className="text-center rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex justify-center items-center">
-              Front-End
-            </div>
           </div>
         </div>
         <div className="w-1/5 skill-card">
+          <div className="mb-4 flex justify-center">
+            <div className="ml-2 rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex justify-center items-center">
+              Back-End
+            </div>
+          </div>
           <div className="flex flex-col">
             <div className="mb-4">
               <Image src={java} width={100} height={200} />
@@ -91,13 +98,15 @@ function PageSkills() {
             <div className="mb-8">
               <Image src={mysql} />
             </div>
-            <div className="ml-2 text-center rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex justify-center items-center">
-              Back-End
-            </div>
           </div>
         </div>
         <div className="w-1/5 skill-card">
-          <div className="flex flex-col ">
+          <div className="mb-4 flex justify-center">
+            <div className="ml-2 rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex justify-center items-center">
+              ETC
+            </div>
+          </div>
+          <div className="flex flex-col">
             <div className="my-16">
               <Image src={github} width={100} height={100} />
             </div>
@@ -106,9 +115,6 @@ function PageSkills() {
             </div>
             <div className="my-16">
               <Image src={sourcetree} />
-            </div>
-            <div className="ml-2 mt-8 text-center rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex justify-center items-center">
-              ETC
             </div>
           </div>
         </div>

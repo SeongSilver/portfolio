@@ -57,5 +57,5 @@ p {
 }
 
 .skill-card {
-  @apply h-[700px] bg-blue-100 rounded-2xl m-16 p-8 opacity-80;
+  @apply h-[750px] bg-blue-100 rounded-2xl m-16 p-8 opacity-80;
 }
