@@ -12,6 +12,8 @@ import redux from "./img/logo/redux.png";
 import reduxsaga from "./img/logo/redux-saga.png";
 import nextjs from "./img/logo/nextjs.png";
 import tailwindcss from "./img/logo/tailwindcss.png";
+import sass from "./img/logo/sass.png";
+import styled from "./img/logo/styled-component.png";
 
 import java from "./img/logo/java.png";
 import spring from "./img/logo/spring.png";
@@ -21,6 +23,8 @@ import mysql from "./img/logo/mysql.png";
 import github from "./img/logo/github.png";
 import git from "./img/logo/git.png";
 import sourcetree from "./img/logo/sourcetree.png";
+import photoshop from "./img/logo/photoshop.png";
+import illust from "./img/logo/illust.png";
 
 function PageSkills() {
   return (
@@ -46,16 +50,22 @@ function PageSkills() {
               <div>
                 <Image src={js} width={80} height={120} />
               </div>
+              <div>
+                <Image src={styled} width={120} height={120} />
+              </div>
             </div>
             <div className="mb-12 flex space-x-12">
               <div>
-                <Image src={jquery} width={100} height={120} />
+                <Image src={jquery} width={150} height={150} />
               </div>
               <div>
                 <Image src={bootstrap} width={120} height={120} />
               </div>
               <div>
                 <Image src={tailwindcss} width={220} height={120} />
+              </div>
+              <div>
+                <Image src={sass} width={180} height={120} />
               </div>
             </div>
             <div className="mb-12 flex space-x-12">
@@ -74,7 +84,7 @@ function PageSkills() {
                 <Image src={reduxsaga} width={120} height={130} />
               </div>
               <div>
-                <Image src={nextjs} width={200} height={150} />
+                <Image src={nextjs} width={160} height={120} />
               </div>
             </div>
           </div>
@@ -107,14 +117,20 @@ function PageSkills() {
             </div>
           </div>
           <div className="flex flex-col">
-            <div className="my-16">
+            <div className="my-5">
               <Image src={github} width={100} height={100} />
             </div>
-            <div className="my-16">
+            <div className="my-5">
               <Image src={git} />
             </div>
-            <div className="my-16">
+            <div className="my-5">
               <Image src={sourcetree} />
+            </div>
+            <div className="my-5">
+              <Image src={photoshop} width={100} height={100} />
+            </div>
+            <div className="my-5">
+              <Image src={illust} width={100} height={100} />
             </div>
           </div>
         </div>
