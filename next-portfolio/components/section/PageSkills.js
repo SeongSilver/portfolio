@@ -28,7 +28,7 @@ import illust from "./img/logo/illust.png";
 
 function PageSkills() {
   return (
-    <div className="text-center my-32">
+    <div className="text-center">
       <div>
         <h1 className="text-4xl font-semibold text-gray-900">Skills</h1>
       </div>
@@ -42,49 +42,49 @@ function PageSkills() {
           <div className="flex flex-col   items-center">
             <div className="mb-12 flex space-x-12">
               <div>
-                <Image src={html} width={80} height={120} />
+                <Image src={html} width={60} height={90} />
               </div>
               <div>
-                <Image src={css} width={80} height={120} />
+                <Image src={css} width={60} height={90} />
               </div>
               <div>
-                <Image src={js} width={80} height={120} />
+                <Image src={js} width={60} height={90} />
               </div>
               <div>
-                <Image src={styled} width={120} height={120} />
-              </div>
-            </div>
-            <div className="mb-12 flex space-x-12">
-              <div>
-                <Image src={jquery} width={150} height={150} />
-              </div>
-              <div>
-                <Image src={bootstrap} width={120} height={120} />
-              </div>
-              <div>
-                <Image src={tailwindcss} width={220} height={120} />
-              </div>
-              <div>
-                <Image src={sass} width={180} height={120} />
+                <Image src={styled} width={90} height={90} />
               </div>
             </div>
             <div className="mb-12 flex space-x-12">
               <div>
-                <Image src={axios} width={200} height={30} />
+                <Image src={jquery} width={120} height={120} />
               </div>
               <div>
-                <Image src={react} width={200} height={50} />
+                <Image src={bootstrap} width={90} height={90} />
+              </div>
+              <div>
+                <Image src={tailwindcss} width={160} height={96} />
+              </div>
+              <div>
+                <Image src={sass} width={150} height={100} />
+              </div>
+            </div>
+            <div className="mb-12 flex space-x-12">
+              <div>
+                <Image src={axios} width={150} height={20} />
+              </div>
+              <div>
+                <Image src={react} width={140} height={30} />
               </div>
             </div>
             <div className="mb-8 flex space-x-12">
               <div>
-                <Image src={redux} width={100} height={120} />
+                <Image src={redux} width={75} height={90} />
               </div>
               <div>
-                <Image src={reduxsaga} width={120} height={130} />
+                <Image src={reduxsaga} width={120} height={100} />
               </div>
               <div>
-                <Image src={nextjs} width={160} height={120} />
+                <Image src={nextjs} width={120} height={90} />
               </div>
             </div>
           </div>
@@ -96,17 +96,17 @@ function PageSkills() {
             </div>
           </div>
           <div className="flex flex-col">
-            <div className="mb-4">
-              <Image src={java} width={100} height={200} />
+            <div className="mb-8">
+              <Image src={java} width={60} height={120} />
             </div>
             <div className="mb-8">
-              <Image src={spring} />
+              <Image src={spring} width={110} height={80} />
             </div>
             <div className="mb-8">
-              <Image src={nodejs} />
+              <Image src={nodejs} width={150} height={90} />
             </div>
             <div className="mb-8">
-              <Image src={mysql} />
+              <Image src={mysql} width={130} height={80} />
             </div>
           </div>
         </div>
@@ -118,19 +118,19 @@ function PageSkills() {
           </div>
           <div className="flex flex-col">
             <div className="my-5">
-              <Image src={github} width={100} height={100} />
+              <Image src={github} width={80} height={80} />
             </div>
             <div className="my-5">
-              <Image src={git} />
+              <Image src={git} width={120} height={60} />
             </div>
             <div className="my-5">
               <Image src={sourcetree} />
             </div>
             <div className="my-5">
-              <Image src={photoshop} width={100} height={100} />
+              <Image src={photoshop} width={60} height={60} />
             </div>
             <div className="my-5">
-              <Image src={illust} width={100} height={100} />
+              <Image src={illust} width={60} height={60} />
             </div>
           </div>
         </div>

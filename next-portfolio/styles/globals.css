@@ -15,11 +15,11 @@
 }
 
 .btn-project {
-  @apply inline-flex text-white dark:text-white bg-blue-300 dark:bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-400 dark:hover:bg-blue-400 rounded text-lg;
+  @apply inline-flex text-white dark:text-white bg-blue-500 dark:bg-blue-700/70 border-0 py-2 px-6 focus:outline-none hover:bg-blue-400 dark:hover:bg-blue-400 rounded text-lg;
 }
 
 .project-card {
-  @apply flex flex-col m-3 rounded-xl text-slate-200 w-full
+  @apply m-3 rounded-xl text-slate-200 w-full
   transition duration-300 transform border border-gray-300 
   hover:scale-105 hover:shadow-lg
   dark:border-gray-200/50
@@ -57,5 +57,34 @@ p {
 }
 
 .skill-card {
-  @apply h-[750px] bg-blue-100 rounded-2xl m-16 p-8 opacity-80;
+  @apply h-[650px] bg-blue-100 rounded-2xl m-16 p-8 opacity-80;
+}
+.full-page-controls {
+  position: fixed;
+  top: 45%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.full-page-controls button {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  margin-right: 10px;
+  white-space: pre;
+  margin-bottom: 40px;
+}
+.full-page-controls button:nth-child(1) {
+  display: none;
+}
+.full-page-controls button:nth-child(5) {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
