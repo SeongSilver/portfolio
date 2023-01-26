@@ -3,23 +3,22 @@ import Layout from "../components/layout";
 import Head from "next/head";
 import { TOKEN, DATABASE_ID } from "../config/index.js";
 import ProjectItem from "../components/projects/projectItem";
-import Modal from "../components/common/Modal";
 import Footer from "../components/footer";
+import Slider from "react-slick";
 
 export default function Projects({ projects }) {
-  const [modal, setModal] = useState("");
-  const [modalCheck, setModalCheck] = useState(false);
-
-  const openModalHandler = (id) => {
-    setModal(id);
-    console.log("ddd");
+  console.log(projects.results);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
-
-  console.log(projects.result);
   return (
-    <>
+    <div>
       <Layout className="px-100">
-        <div className="flex flex-col items-center justify-center min-h-screen mb-10 px-32">
+        <div className="w-screen flex flex-col items-center justify-center min-h-screen mb-10 px-32">
           <Head>
             <title>윈스턴's 포트폴리오</title>
             <meta name="description" content="오늘도 리액트" />
@@ -31,29 +30,19 @@ export default function Projects({ projects }) {
               {projects.results.length}
             </span>
           </h1>
-          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 py-10 m-6 gap-8">
-            {projects.results.map((aProject) => (
-              <li key={aProject.id} className="z-0">
-                <ProjectItem
-                  key={aProject.id}
-                  id={aProject.id}
-                  data={aProject}
-                  openModalHandler={openModalHandler}
-                />
-                <Modal
-                  id={aProject.id}
-                  modal={modal}
-                  setModal={setModal}
-                  data={aProject}
-                  className="!z-99"
-                />
-              </li>
+          <ul>
+            {/* <Slider {...settings}> */}
+            {projects.results.reverse().map((aProject, index) => (
+              <div key={index} className="flex">
+                <ProjectItem data={aProject} />
+              </div>
             ))}
+            {/* </Slider> */}
           </ul>
         </div>
       </Layout>
       <Footer />
-    </>
+    </div>
   );
 }
 
