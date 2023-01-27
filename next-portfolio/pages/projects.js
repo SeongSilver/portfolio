@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import Layout from "../components/layout";
 import Head from "next/head";
 import { TOKEN, DATABASE_ID } from "../config/index.js";
 import ProjectItem from "../components/projects/projectItem";
+import Header from "../components/header";
 import Footer from "../components/footer";
-import Slider from "react-slick";
 
 export default function Projects({ projects }) {
   console.log(projects.results);
@@ -17,30 +16,29 @@ export default function Projects({ projects }) {
   };
   return (
     <div>
-      <Layout className="px-100">
-        <div className="w-screen flex flex-col items-center justify-center min-h-screen mb-10 px-32">
-          <Head>
-            <title>윈스턴's 포트폴리오</title>
-            <meta name="description" content="오늘도 리액트" />
-            <link rel="icon" href="/favicon.ico" />
-          </Head>
-          <h1 className="text-3xl font-bold">
-            총 프로젝트 :
-            <span className="pl-4 text-blue-500">
-              {projects.results.length}
-            </span>
-          </h1>
-          <ul>
-            {/* <Slider {...settings}> */}
-            {projects.results.reverse().map((aProject, index) => (
-              <div key={index} className="flex">
-                <ProjectItem data={aProject} />
-              </div>
-            ))}
-            {/* </Slider> */}
-          </ul>
-        </div>
-      </Layout>
+      {/* <Layout className="px-100"> */}
+      <Header />
+      <div className="w-screen flex flex-col items-center justify-center min-h-screen mb-10 px-32">
+        <Head>
+          <title>윈스턴's 포트폴리오</title>
+          <meta name="description" content="오늘도 리액트" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <h1 className="text-3xl font-bold">
+          총 프로젝트 :
+          <span className="pl-4 text-blue-500">{projects.results.length}</span>
+        </h1>
+        <ul>
+          {/* <Slider {...settings}> */}
+          {projects.results.reverse().map((aProject, index) => (
+            <div key={index} className="flex">
+              <ProjectItem data={aProject} />
+            </div>
+          ))}
+          {/* </Slider> */}
+        </ul>
+      </div>
+      {/* </Layout> */}
       <Footer />
     </div>
   );

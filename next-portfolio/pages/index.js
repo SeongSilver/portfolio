@@ -6,18 +6,16 @@ import Footer from "../components/footer";
 export default function Home() {
   return (
     <>
-      <Layout>
-        <Head>
-          <title>성실버의 개발노트</title>
-          <meta name="description" content="오늘도 리액트" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <section className="flex flex-col items-center justify-centertext-gray-600 body-font">
-          <div className="container mx-auto flex px-5  md:flex-row flex-col items-center">
-            <Hero />
-          </div>
-        </section>
-      </Layout>
+      <Head>
+        <title>성실버의 개발노트</title>
+        <meta name="description" content="오늘도 리액트" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <section className="flex flex-col items-center justify-centertext-gray-600 body-font">
+        <div className="container mx-auto flex px-5  md:flex-row flex-col items-center">
+          <Hero />
+        </div>
+      </section>
     </>
   );
 }

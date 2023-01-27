@@ -7,12 +7,12 @@ import DarkModeToggleButton from "./dark-mode-toggle-button";
 export default function Header() {
   return (
     <>
-      <header className="text-gray-600 body-font">
+      <header className="text-slate-100 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link href="/">
-            <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <a className="flex title-font font-medium items-center mb-4 md:mb-0">
               {/* <Image src={logo} width={50} height={50} /> */}
-              <span className="ml-3 text-2xl font-bold dark:text-slate-50 ">
+              <span className="ml-3 text-2xl font-bold text-slate-50 ">
                 성실버의 개발노트
               </span>
             </a>

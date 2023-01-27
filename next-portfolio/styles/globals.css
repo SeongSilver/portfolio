@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./slick-theme.css";
+@import "./slick.css";
+
 @font-face {
   font-family: "MICEGothic";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2")
@@ -19,8 +22,8 @@
 }
 
 .project-card {
-  @apply my-16 rounded-xl text-slate-800 w-[60vw] h-[70vh] block
-  transition duration-300 transform border border-gray-300 
+  @apply my-16 rounded-xl text-slate-800 w-[60vw] h-[70vh] 
+  transition duration-300 transform border border-gray-100/20 border-4 shadow-2xl
   hover:scale-105 hover:shadow-lg
   dark:border-gray-200/50
   dark:hover:shadow-gray-400/40;
@@ -56,7 +59,15 @@ p {
 }
 
 .skill-card {
-  @apply h-[650px] bg-blue-100 rounded-2xl m-16 p-8 opacity-80;
+  @apply h-[620px] rounded-2xl shadow-2xl mx-6;
+}
+
+.skill-card-title {
+  @apply absolute -top-4  mb-16 rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex justify-center items-center opacity-80;
+}
+
+.header {
+  z-index: 10;
 }
 .full-page-controls {
   position: fixed;
@@ -64,15 +75,19 @@ p {
   left: 5%;
   display: flex;
   flex-direction: column;
+  z-index: 10;
 }
 .full-page-controls button {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  font-size: 0.5em;
+  height: 15px;
   border-radius: 100%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   margin-right: 10px;
   white-space: pre;
   margin-bottom: 40px;
+  z-index: 100;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 .full-page-controls button:nth-child(1) {
   display: none;

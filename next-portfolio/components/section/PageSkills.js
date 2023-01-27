@@ -29,17 +29,15 @@ import illust from "./img/logo/illust.png";
 function PageSkills() {
   return (
     <div className="text-center">
-      <div>
-        <h1 className="text-4xl font-semibold text-gray-900">Skills</h1>
+      <div className="relative">
+        <h1 className="text-4xl font-semibold text-gray-900 pb-16">Skills</h1>
       </div>
       <div className="flex">
-        <div className="w-3/5 skill-card content-center">
+        <div className="relative w-3/5 skill-card content-center">
           <div className="mb-4 flex justify-center">
-            <div className="mb-4 rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex justify-center items-center">
-              Front-End
-            </div>
+            <div className="skill-card-title">Front-End</div>
           </div>
-          <div className="flex flex-col   items-center">
+          <div className="flex flex-col pt-16 items-center">
             <div className="mb-12 flex space-x-12">
               <div>
                 <Image src={html} width={60} height={90} />
@@ -90,14 +88,12 @@ function PageSkills() {
           </div>
         </div>
         <div className="w-1/5 skill-card">
-          <div className="mb-4 flex justify-center">
-            <div className="ml-2 rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex justify-center items-center">
-              Back-End
-            </div>
+          <div className="relative mb-16 flex justify-center">
+            <div className="skill-card-title">Back-End</div>
           </div>
           <div className="flex flex-col">
             <div className="mb-8">
-              <Image src={java} width={60} height={120} />
+              <Image src={java} width={70} height={120} />
             </div>
             <div className="mb-8">
               <Image src={spring} width={110} height={80} />
@@ -111,10 +107,8 @@ function PageSkills() {
           </div>
         </div>
         <div className="w-1/5 skill-card">
-          <div className="mb-4 flex justify-center">
-            <div className="ml-2 rounded-2xl bg-blue-500 text-white text-xl font-bold w-[150px] h-[50px] flex justify-center items-center">
-              ETC
-            </div>
+          <div className="relative mb-16 flex justify-center">
+            <div className="skill-card-title">ETC</div>
           </div>
           <div className="flex flex-col">
             <div className="my-5">
@@ -124,7 +118,7 @@ function PageSkills() {
               <Image src={git} width={120} height={60} />
             </div>
             <div className="my-5">
-              <Image src={sourcetree} />
+              <Image src={sourcetree} width={150} height={35} />
             </div>
             <div className="my-5">
               <Image src={photoshop} width={60} height={60} />
