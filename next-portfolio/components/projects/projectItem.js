@@ -26,11 +26,11 @@ export default function ProjectItem({ data }) {
   const slickSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     centerMode: true,
     centerPadding: "0px", // 0px 하면 슬라이드 끝쪽 이미지가 안잘림
   };
@@ -38,20 +38,18 @@ export default function ProjectItem({ data }) {
   return (
     <div>
       <div className="project-card">
-        <div className="w-[30%] h-full inline-block">
-          <h1 className="text-2xl font-bold text-slate-800">
-            <Image src={logo} alt="logo" width={30} height={30} quality={100} />
-            &nbsp;{title}
-          </h1>
+        <div className="w-[35%] h-[70vh] inline-block align-middle p-8 text-center">
+          <Image src={logo} alt="logo" width={30} height={30} quality={100} />
+          <h1 className="text-2xl font-bold text-slate-800">&nbsp;{title}</h1>
           <div className="text-slate-800 my-3 dark:text-slate-100">
             {description}
           </div>
           <div>
             <span>개발인원 : {member}명</span>
-            &emsp;&emsp;
+            <br />
             <span>
               {tag.map((tag) => (
-                <span className="text-slate-200 mr-1 p-1 text-sm py-1 bg-slate-500 rounded-md bg-skyblue-500 dark:bg-skyblue-700 w-30">
+                <span className="text-slate-200 mr-1 p-1 text-sm  bg-slate-500 rounded-md bg-skyblue-500 dark:bg-skyblue-700 whitespace-pre">
                   {" "}
                   {tag.name}
                 </span>
@@ -70,7 +68,7 @@ export default function ProjectItem({ data }) {
           </div>
           <br />
         </div>
-        <div className="w-[68%] h-full inline-block">
+        <div className="w-[65%] h-[70vh] inline-block align-middle p-8">
           <div className="">
             <Slider {...slickSettings}>
               {imageArr.map((image, index) => (

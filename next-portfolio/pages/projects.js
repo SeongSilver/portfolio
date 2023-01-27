@@ -31,9 +31,7 @@ export default function Projects({ projects }) {
         <ul>
           {/* <Slider {...settings}> */}
           {projects.results.reverse().map((aProject, index) => (
-            <div key={index} className="flex">
-              <ProjectItem data={aProject} />
-            </div>
+            <ProjectItem data={aProject} key={index} />
           ))}
           {/* </Slider> */}
         </ul>
