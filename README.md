@@ -21,7 +21,6 @@
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"/>
 <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=flat&logo=Tailwind CSS&logoColor=white"/>
 <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/>
-<img src="https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=Axios&logoColor=white"/>  
 
 
 ---
@@ -38,7 +37,7 @@
 * JSX, tailwindCSS, JavaScript를 활용하여 페이지 구성
 * Next.js 프로젝트 생성
 * tailwind CSS를 사용한 다크모드 지원
-* 웹 컴파일러 axios를 활용한 비동기 데이터 전송방식 사용
+* fetch API를 활용한 비동기 데이터 전송방식 사용
 * react-full-page를 사용해 메인페이지 전체화면 넘기기 스크롤링 구현
 * react-slick으로 프로젝트 소개 시 구현된 화면 슬라이드 구현
 
