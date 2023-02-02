@@ -63,7 +63,7 @@ function PageAboutme() {
 
   return (
     <div className="h-full">
-      <div className="fixed top-[50px] right-[100px] body-font">
+      <div className="fixed top-[50px] right-[50px] body-font">
         <DarkModeToggleButton />
       </div>
       <div className="h-full">
