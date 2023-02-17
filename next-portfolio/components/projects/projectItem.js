@@ -49,14 +49,16 @@ export default function ProjectItem({ data }) {
             />
             <br />
             <br />
-            <h1 className="text-2xl font-bold text-slate-800">&nbsp;{title}</h1>
+            <h1 className="text-[1.4em] font-bold text-slate-800">
+              &nbsp;{title}
+            </h1>
           </div>
           <div className="h-1/2 align-middle">
             <div className="text-slate-800 my-3 dark:text-slate-100">
               {description}
             </div>
             <div>
-              <span>개발인원 : {member}명</span>
+              <span className="text-[0.8em]">개발인원 : {member}명</span>
               <br />
               <br />
               <span>
@@ -70,12 +72,12 @@ export default function ProjectItem({ data }) {
             </div>
             <br />
             {link ? (
-              <div className="mt-3">
+              <div className="mt-[0.5%]">
                 <a href={link}>배포링크</a>
               </div>
             ) : null}
             <br />
-            <div className="mt-3">
+            <div className="mt-[0.5%]">
               <a href={githubLink} className="mb-2">
                 깃허브 바로가기
               </a>
@@ -100,7 +102,7 @@ export default function ProjectItem({ data }) {
                 ))}
               </Slider>
             </div>
-            <div className="h-1/2 whitespace-pre h-auto relative block flex items-center ">
+            <div className=" text-[0.8em] h-1/2 whitespace-pre h-auto relative block flex items-center ">
               {content}
             </div>
           </div>
