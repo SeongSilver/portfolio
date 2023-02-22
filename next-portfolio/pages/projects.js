@@ -20,7 +20,7 @@ export default function Projects({ projects }) {
       <Header />
       <div className="w-screen flex flex-col items-center justify-center min-h-screen mb-10 px-32">
         <Head>
-          <title>윈스턴's 포트폴리오</title>
+          <title>성실버의 개발노트</title>
           <meta name="description" content="오늘도 리액트" />
           <link rel="icon" href="/favicon.ico" />
         </Head>

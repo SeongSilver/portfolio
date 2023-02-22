@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>성실버의 개발노트</title>
+        <title>성실버의 포트폴리오</title>
         <meta name="description" content="오늘도 리액트" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
