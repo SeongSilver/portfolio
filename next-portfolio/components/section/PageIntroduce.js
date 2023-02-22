@@ -41,7 +41,7 @@ function PageIntroduce() {
         </p>
         <div className="fixed bottom-[50px] right-[50px] pl-16 flex justify-center mt-8">
           <Link href="/projects">
-            <a className=" btn-project font-bold">프로젝트 보러가기</a>
+            <a className="btn-project font-bold">프로젝트 보러가기</a>
           </Link>
         </div>
       </div>

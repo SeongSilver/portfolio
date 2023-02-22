@@ -58,7 +58,7 @@ export default function ProjectItem({ data }) {
               {description}
             </div>
             <div>
-              <span className="text-[0.8em]">개발인원 : {member}명</span>
+              <span>개발인원 : {member}명</span>
               <br />
               <br />
               <span>
@@ -86,8 +86,8 @@ export default function ProjectItem({ data }) {
           <br />
         </div>
         <div className="w-[65%] h-[70vh] inline-block align-middle py-8 ">
-          <div className="h-full flex flex-col justify-around justify-items-center">
-            <div className="h-1/2 relative block">
+          <div className="h-full flex flex-col justify-items-center">
+            <div className="h-1/2 relative block my-8">
               <Slider {...slickSettings}>
                 {imageArr.map((image, index) => (
                   <div key={index}>
