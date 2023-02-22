@@ -73,7 +73,7 @@ export default function ProjectItem({ data }) {
             <br />
             {link ? (
               <div className="mt-[0.5%]">
-                <a href={link}>배포링크</a>
+                <a href={link}>배포링크 바로가기</a>
               </div>
             ) : null}
             <br />
