@@ -39,7 +39,7 @@ function PageIntroduce() {
           <br />
           어엿한 개발자로 거듭날 것을 약속드립니다.
         </p>
-        <div className="fixed bottom-[50px] right-[50px] pl-16 flex justify-center mt-8">
+        <div className="fixed bottom-[100px] right-[150px] pl-16 flex justify-center mt-8">
           <Link href="/projects">
             <a className="btn-project font-bold">프로젝트 보러가기</a>
           </Link>

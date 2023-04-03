@@ -15,13 +15,13 @@ import notion from "./img/logo/Notion.png";
 
 function PageSkills() {
   return (
-    <div className="flex h-[77vh] items-center">
+    <div className="flex h-[75vh] items-center">
       <div className="text-4xl font-black">
         <h1>Skill</h1><br/>
         &<br/><br/>
         <h1>Competencies</h1>
       </div>
-      <div className="w-[45vw] h-full ml-16">
+      <div className="w-[40vw] h-full ml-16">
         <div className="skill-card">
         <h1 className="skill-Type">JavaScrip & TypeScript</h1>
           <Image src={js} width={80} height={80} />&emsp;&emsp;
@@ -69,7 +69,7 @@ function PageSkills() {
           <h1 className="skill-Type">Cooperation</h1>
           <Image src={github} width={80} height={80} />&emsp;&emsp;
           <Image src={notion} width={80} height={80} />&emsp;&emsp;
-          <Image src={slack} width={240} height={80} />&emsp;
+          <Image src={slack} width={200} height={60} />&emsp;
           <p className="skill-text">
             - Git-hub의 Git Flow 방식을 이해, 프로젝트 시 사용 가능<br/>
             - Notion, Slack, Trello 등 다양한 협업 툴 사용 경험
