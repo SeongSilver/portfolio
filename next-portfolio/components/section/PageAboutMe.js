@@ -12,40 +12,40 @@ import instagram from "./img/instagram.png";
 import bg from "./img/uyuni.JPEG";
 
 function PageAboutme() {
-  const introduce =
-    "하고싶은 건 꼭 해봐야 하는데 이번에는 개발자가 되고 싶습니다";
-  const [blogTitle, setBlogTitle] = useState("");
-  const [count, setCount] = useState(0);
+  // const introduce =
+  //   "하고싶은 건 꼭 해봐야 하는데 이번에는 개발자가 되고 싶습니다";
+  // const [blogTitle, setBlogTitle] = useState("");
+  // const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    const typingInterval = setInterval(() => {
-      setBlogTitle((prevTitleValue) => {
-        let result = prevTitleValue
-          ? prevTitleValue + introduce[count]
-          : introduce[0];
-        setCount(count + 1);
+  // useEffect(() => {
+  //   const typingInterval = setInterval(() => {
+  //     setBlogTitle((prevTitleValue) => {
+  //       let result = prevTitleValue
+  //         ? prevTitleValue + introduce[count]
+  //         : introduce[0];
+  //       setCount(count + 1);
 
-        if (count >= introduce.length) {
-          setCount(0);
-          setBlogTitle("");
-        }
+  //       if (count >= introduce.length) {
+  //         setCount(0);
+  //         setBlogTitle("");
+  //       }
 
-        return result;
-      });
-    }, 100);
+  //       return result;
+  //     });
+  //   }, 100);
 
-    return () => {
-      clearInterval(typingInterval);
-    };
-  });
+  //   return () => {
+  //     clearInterval(typingInterval);
+  //   };
+  // });
 
   const el = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "하고 싶고 되고 싶은 것은 무조건 도전하는 성격인데",
-        "프론트엔드 개발자가 되고 싶습니다!",
+        "신입 웹 프론트엔드 개발자 유성은입니다!",
+        "경험과 소통에 가치를 두고 지금보다 더 나은 개발할 것을 약속드립니다"
       ], // Strings to display
       // Speed settings, try diffrent values untill you get good results
       startDelay: 150,
