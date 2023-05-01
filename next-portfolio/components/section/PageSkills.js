@@ -16,7 +16,7 @@ import notion from "./img/logo/Notion.png";
 function PageSkills() {
   return (
     <div className="flex h-[75vh] items-center">
-      <div className="text-4xl font-black">
+      <div className="text-3xl font-black">
         <h1>Skill</h1><br/>
         &<br/><br/>
         <h1>Competencies</h1>
